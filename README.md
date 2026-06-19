@@ -22,3 +22,44 @@ The application listens to voice commands through the microphone, converts speec
 - JSON Library (org.json)
 
 ## Project Structure
+src/main/java/com/chandu/jarvis
+│
+├── controller
+│ └── VoiceController.java
+│
+├── voice
+│ └── SpeechRecognitionService.java
+│
+├── command
+│ └── ToolExecution.java
+│
+└── JarvisAgentV1Application.java
+
+
+## How It Works
+
+1. User calls the REST endpoint.
+2. Microphone starts listening.
+3. Vosk converts speech to text.
+4. Text command is extracted from JSON.
+5. Command is matched against supported actions.
+6. Corresponding desktop application is launched.
+
+Example:
+
+Voice Input:
+
+open chrome
+
+
+Chrome Browser Opens
+
+
+| Voice Command   | Action                   |
+| --------------- | ------------------------ |
+| open chrome     | Opens Google Chrome      |
+| open notepad    | Opens Notepad            |
+| open calculator | Opens Calculator         |
+| open vscode     | Opens Visual Studio Code |
+| spotify         | Opens Spotify            |
+
