@@ -14,7 +14,7 @@ public class ToolExecution {
         switch (command) {
 
             case "open chrome":
-                Runtime.getRuntime().exec("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+                Runtime.getRuntime().exec("chrome path");
                 return "Chrome opened";
 
             case "open notepad":
@@ -26,7 +26,7 @@ public class ToolExecution {
                 return "calculator opened";
 
             case "open vscode":
-                Runtime.getRuntime().exec("C:\\Users\\donka\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe");
+                Runtime.getRuntime().exec("vs path");
                 return "VS Code opened";
 
             case "spotify":
